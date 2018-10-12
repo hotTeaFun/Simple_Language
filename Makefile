@@ -13,4 +13,6 @@ Simple.tab.c: Simple.y
 	bison -d Simple.y
 clean:
 	rm *.o *.c Simple Simple.tab.h
+run:
+	./Simple test_simple
  
