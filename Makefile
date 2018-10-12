@@ -5,8 +5,8 @@ Simple: Simple.tab.o lex.yy.o
 
 Simple.tab.o: Simple.tab.c 
 	gcc -c Simple.tab.c
-lex.yy.c: Simple.lex 
-	flex Simple.lex
+lex.yy.c: Simple.l 
+	flex Simple.l
 lex.yy.o: lex.yy.c 
 	gcc -c lex.yy.c
 Simple.tab.c: Simple.y 
