@@ -11,8 +11,9 @@ lex.yy.o: lex.yy.c
 	gcc -c lex.yy.c
 Simple.tab.c: Simple.y 
 	bison -d Simple.y
-clean:
-	rm *.o *.c Simple Simple.tab.h
+clean: 
+	rm Simple.tab.o Simple.tab.c Simple.tab.h lex.yy.o lex.yy.c Simple
+
 run:
 	./Simple test_simple
  
